@@ -1,5 +1,7 @@
 /* // reset everything */
-*, *::before,*::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -29,7 +31,6 @@ audio,
 iframe,
 embed,
 object {
-  display: block;
   max-width: 100%;
 }
 
@@ -39,7 +40,8 @@ button,
 textarea,
 select {
   font: inherit;
-  line-height: inherit;}
+  line-height: inherit;
+}
 
 /* collapse table */
 table {
@@ -48,7 +50,8 @@ table {
 }
 
 /* // assign button hover state */
-button, [role="button"] {
+button,
+[role='button'] {
   cursor: pointer;
   &:focus {
     outline: 0;
@@ -62,37 +65,26 @@ a {
   text-decoration: inherit;
   -webkit-tap-highlight-color: transparent;
 }
-
-/* // reset heading style */
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: inherit;
-  font-weight: inherit;
-}
-
 /* // reset list style */
-ol, ul {
+ol,
+ul {
   list-style: none;
 }
 
 /* // reset text input style */
-[type=date],
-[type=datetime],
-[type=datetime-local],
-[type=email],
-[type=month],
-[type=number],
-[type=password],
-[type=search],
-[type=tel],
-[type=text],
-[type=time],
-[type=url],
-[type=week],
+[type='date'],
+[type='datetime'],
+[type='datetime-local'],
+[type='email'],
+[type='month'],
+[type='number'],
+[type='password'],
+[type='search'],
+[type='tel'],
+[type='text'],
+[type='time'],
+[type='url'],
+[type='week'],
 textarea,
 select {
   -webkit-appearance: none;
@@ -125,11 +117,11 @@ textarea {
   -moz-appearance: none;
   appearance: none;
   &:focus {
-    outline: 0
+    outline: 0;
   }
 }
 
- /*remove all animations, transitions and smooth scroll for people that prefer not to see them*/
+/*remove all animations, transitions and smooth scroll for people that prefer not to see them*/
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
     scroll-behavior: auto;
@@ -143,4 +135,138 @@ textarea {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+header,
+main,
+.optContext,
+.headlineHeading {
+  display: flex;
+  flex-direction: column;
+}
+header {
+  background-image: url(assests/background.jpeg);
+  opacity: 95%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  justify-items: stretch;
+  align-items: stretch;
+  gap: 2rem;
+}
+
+nav {
+  flex: 0.3;
+  display: flex;
+  flex-direction: row;
+  gap: 5rem;
+  align-items: stretch;
+  justify-items: center;
+  padding: 0.02rem;
+}
+.NavBtns {
+  flex: 0.8;
+  display: flex;
+  gap: 1rm;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: center;
+  align-self: center;
+}
+
+.logo {
+  min-height: 1rem;
+  min-width: 1rem;
+  padding: 1rem;
+}
+.headerBtn {
+  outline: transparent;
+  background: transparent;
+  border: transparent;
+  border-radius: 0;
+}
+.headline,
+.option,
+.options,
+.contact,
+.contactBtns {
+  display: flex;
+  gap: 0.05rem;
+  flex-direction: row;
+}
+.Larrow,
+.Rarrow {
+  flex: 0.03;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+  max-height: 100%;
+}
+
+.headline {
+  flex: 0.7;
+}
+.headlineHeading {
+  flex: 0.97;
+  gap: 1rem;
+}
+
+.headerBtn {
+  padding: 1rem 1.5rem;
+}
+
+.greenBtn,
+.redBtn {
+  border: 0.01rem solid darkslateblue;
+  border-radius: 5px;
+  background: red;
+  padding: 1rem;
+}
+.greenBtn,
+.redBtn {
+  background: red;
+}
+.greenBtn {
+  background: greenyellow;
+}
+.options {
+  margin: 2rem 0.5rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-content: center;
+  justify-content: center;
+}
+
+.option {
+  padding: 1rem 2rem;
+  gap: 1rem;
+  border: 0.1rem solid darkslateblue;
+  border-radius: 4px;
+}
+
+.optContext {
+  gap: 1rem;
+}
+.contact {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+  justify-content: stretch;
+  align-content: stretch;
+  background-image: url(assests/background1.jpeg);
+  opacity: 95%;
+  background-repeat: no-repeat;
+  background-size: 100;
+  background-position: bottom;
+  padding: 1rem;
+}
+.contactHeading {
+  flex: 0.7;
+}
+.contactBtns {
+  flex: 0.3;
+  gap: 2rem;
+}
+footer {
+  background: darkslategrey;
+  padding: 2rem 1rem;
 }

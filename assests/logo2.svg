@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="96pt" height="80pt" viewBox="0 0 96 70"
+  preserveAspectRatio="xMinYMin meet" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <rect id="svgEditorBackground" x="0" y="0" width="96" height="70" style="fill: none; stroke: none;" />
+  <g transform="translate(0.000000,80.000000) scale(0.100000,-0.100000)" fill="#fd3a3a" stroke="#fd3a3a">
+    <g>
+      <path
+        d="M236,793c-4,-5,-24,-13,-43,-18c-20,-6,-44,-21,-55,-35c-17,-23,-17,-29,-4,-66c7,-22,30,-66,51,-98c103,-162,101,-209,-18,-384c-32,-45,-57,-90,-57,-98c0,-25,45,-62,84,-69c20,-4,39,-11,42,-16c7,-12,69,-12,92,0c9,5,42,16,73,25c103,30,201,122,241,228c10,26,18,52,18,57c0,4,-36,35,-80,69l-80,61l-2,-177l-3,-177l-60,0l-60,0l-3,298c4.01,234.48,0,297,11,297c15,0,39,-17,177,-123c47,-36,87,-61,89,-55c8,24,-66,140,-115,182c-44,36,-122,75,-166,82c-21,4,-41,11,-44,15c-6,11,-78,12,-88,2Z"
+        fill="#fd3a3a" stroke="#fd3a3a" />
+    </g>
+
+    <path
+      d="M822,559l-132,-101l0,-49c0,-27,2,-49,4,-49c2,0,39,27,82,60c43,33,83,59,89,57c6,-2,11,-72,13,-185l2,-182l40,0l40,0l0,275c0,151,-1,275,-3,275c-2,0,-62,-45,-135,-101Z" />
+    <path
+      d="M31 434 c-17 -14 -31 -31 -31 -36 0 -16 58 -68 75 -68 21 0 65 45 65 65 0 20 -44 65 -64 65 -8 0 -28 -12 -45 -26z" />
+  </g>
+  <path d="M-7.733,-12.8l-.4,22.666h11.601l12.667,-5.333Z"
+    style="fill:white;stroke:black;vector-effect:non-scaling-stroke;stroke-width:0" id="e1_shape"
+    transform="matrix(1.12742 0 0 1.12742 46.3994 24.0014)" /><text dy="-0.5em"
+    style="fill:black;font-family:Arial;font-size:20px" id="e3_text" />
+  <polyline style="stroke:black;fill:white;stroke-width:0" id="e7_polyline"
+    points="64.889,28.661,50.158,35.276,66.092,47.903,65.039,28.06,63.987,29.563" />
+  <polyline style="stroke:black;fill:none" stroke-width="0.17073170731707316" id="e9_polyline"
+    points="74.439 19.6341" />
+  <polyline style="stroke:black;fill:white;stroke-width:0" id="e10_polyline"
+    points="49.937,34.862,49.629,70.262,37.624,70.57,37.316,34.554,50.245,34.862" />
+</svg>
