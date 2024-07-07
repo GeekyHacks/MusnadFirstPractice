@@ -32,21 +32,8 @@ iframe,
 embed,
 object {
   max-width: 100%;
-}
-
-/* // inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-  line-height: inherit;
-}
-
-/* collapse table */
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+  min-height: 0.5rem;
+  min-width: 1rem;
 }
 
 /* // assign button hover state */
@@ -61,7 +48,6 @@ button,
 /* // reset anchor style */
 a {
   cursor: pointer;
-  color: inherit;
   text-decoration: inherit;
   -webkit-tap-highlight-color: transparent;
 }
@@ -71,54 +57,9 @@ ul {
   list-style: none;
 }
 
-/* // reset text input style */
-[type='date'],
-[type='datetime'],
-[type='datetime-local'],
-[type='email'],
-[type='month'],
-[type='number'],
-[type='password'],
-[type='search'],
-[type='tel'],
-[type='text'],
-[type='time'],
-[type='url'],
-[type='week'],
-textarea,
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 100%;
-  &:focus {
-    outline: 0;
-  }
-}
-
 /*reset firefox placeholder opacity*/
 ::-moz-placeholder {
   opacity: 1;
-}
-
-/* reset textarea style*/
-textarea {
-  /* // move the label to the top */
-  vertical-align: top;
-
-  /* // turn off scroll bars in IE unless needed */
-  overflow: auto;
-}
-
-/* // reset checkbox and radio style */
-[type='checkbox'],
-[type='radio'] {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  &:focus {
-    outline: 0;
-  }
 }
 
 /*remove all animations, transitions and smooth scroll for people that prefer not to see them*/
@@ -140,10 +81,12 @@ textarea {
 header,
 main,
 .optContext,
-.headlineHeading {
+.headlineHeading,
+footer {
   display: flex;
   flex-direction: column;
 }
+
 header {
   background-image: url(assests/background.jpeg);
   opacity: 95%;
@@ -153,17 +96,17 @@ header {
   justify-items: stretch;
   align-items: stretch;
   gap: 2rem;
+  color: aliceblue;
 }
 
 nav {
+  color: aliceblue;
   flex: 0.3;
-  display: flex;
-  flex-direction: row;
-  gap: 5rem;
   align-items: stretch;
   justify-items: center;
   padding: 0.02rem;
 }
+
 .NavBtns {
   flex: 0.8;
   display: flex;
@@ -175,25 +118,26 @@ nav {
 }
 
 .logo {
-  min-height: 1rem;
-  min-width: 1rem;
   padding: 1rem;
 }
+
 .headerBtn {
   outline: transparent;
   background: transparent;
   border: transparent;
   border-radius: 0;
 }
+
 .headline,
 .option,
-.options,
 .contact,
-.contactBtns {
+.contactBtns,
+nav {
   display: flex;
   gap: 0.05rem;
   flex-direction: row;
 }
+
 .Larrow,
 .Rarrow {
   flex: 0.03;
@@ -205,13 +149,21 @@ nav {
 .headline {
   flex: 0.7;
 }
+
+.UnL {
+  border: white solid 2px;
+  border-radius: 4px;
+  max-width: 10%;
+  min-width: 1rem;
+}
 .headlineHeading {
   flex: 0.97;
-  gap: 1rem;
+  gap: 0.6rem;
+  padding: 1rem 3rem;
 }
 
 .headerBtn {
-  padding: 1rem 1.5rem;
+  padding: 1rem;
 }
 
 .greenBtn,
@@ -219,25 +171,30 @@ nav {
   border: 0.01rem solid darkslateblue;
   border-radius: 5px;
   background: red;
-  padding: 1rem;
+  padding: 0.6rem;
 }
 .greenBtn,
 .redBtn {
   background: red;
 }
+
 .greenBtn {
   background: greenyellow;
 }
+
 .options {
   margin: 2rem 0.5rem;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: auto;
   gap: 2rem;
   align-content: center;
   justify-content: center;
 }
 
 .option {
-  padding: 1rem 2rem;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem;
   gap: 1rem;
   border: 0.1rem solid darkslateblue;
   border-radius: 4px;
@@ -246,27 +203,39 @@ nav {
 .optContext {
   gap: 1rem;
 }
+
 .contact {
-  display: flex;
-  gap: 2rem;
-  flex-direction: row;
+  gap: 1rem;
   justify-content: stretch;
-  align-content: stretch;
   background-image: url(assests/background1.jpeg);
   opacity: 95%;
   background-repeat: no-repeat;
-  background-size: 100;
+  background-size: 100%;
   background-position: bottom;
   padding: 1rem;
 }
+
 .contactHeading {
+  color: aliceblue;
   flex: 0.7;
 }
+
 .contactBtns {
   flex: 0.3;
   gap: 2rem;
+  padding: 1.5rem 0rem;
+  a {
+    color: black;
+    font-weight: bold;
+  }
 }
+
 footer {
-  background: darkslategrey;
-  padding: 2rem 1rem;
+  color: aliceblue;
+  background: rgb(27, 34, 34);
+  padding: 1rem;
+  text-align: center;
+  a {
+    color: #fd3a3a;
+  }
 }
